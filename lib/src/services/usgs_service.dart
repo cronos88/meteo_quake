@@ -21,10 +21,10 @@ class UsgsService {
         print(_result[0]);
         return _result.toList();
       } else {
-        return List<Feature>();
+        return List<dynamic>();
       }
     } catch (e) {
-      return List<Feature>();
+      return List<dynamic>();
     }
   }
 
