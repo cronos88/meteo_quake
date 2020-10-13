@@ -30,6 +30,7 @@ class UsgsService {
 
   Future<LocationResult> getLocation() async {
     LocationResult result = await Geolocation.lastKnownLocation();
+    print("Este es Result: ${result.location.latitude}");
     return result;
   }
 }
